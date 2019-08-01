@@ -25,6 +25,7 @@ header {
     animation: Gradient 15s ease infinite;
     background: linear-gradient(-45deg, #FFB74B, #c34a36, #5566DF);
     background-size: 400% 400%;
+    overflow: hidden;
 }
 
 

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/myStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/myStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
       <workItem from="1564161140466" duration="451000" />
       <workItem from="1564582211177" duration="9229000" />
       <workItem from="1564615532494" duration="7173000" />
-      <workItem from="1564654013629" duration="30502000" />
+      <workItem from="1564654013629" duration="30785000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -131,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564697128466</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="кнопки и доп анимация (radio и X координаты)">
+      <created>1564700942582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1564700942582</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +156,8 @@
     <MESSAGE value="Landing page in pure css and html" />
     <MESSAGE value="Added text input field and button &quot;check&quot;" />
     <MESSAGE value="все переделал, добавил % между полями ввода + теперь никуда ничего не съезжает + нормальный градиент и наконец-таки убрал эту отвратную обводку вокруг поля ввода + анимация кнопки" />
-    <option name="LAST_COMMIT_MESSAGE" value="все переделал, добавил % между полями ввода + теперь никуда ничего не съезжает + нормальный градиент и наконец-таки убрал эту отвратную обводку вокруг поля ввода + анимация кнопки" />
+    <MESSAGE value="кнопки и доп анимация (radio и X координаты)" />
+    <option name="LAST_COMMIT_MESSAGE" value="кнопки и доп анимация (radio и X координаты)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
