@@ -101,7 +101,7 @@
       <workItem from="1564161140466" duration="451000" />
       <workItem from="1564582211177" duration="9229000" />
       <workItem from="1564615532494" duration="7173000" />
-      <workItem from="1564654013629" duration="27177000" />
+      <workItem from="1564654013629" duration="30502000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564664348240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="все переделал, добавил % между полями ввода + теперь никуда ничего не съезжает + нормальный градиент и наконец-таки убрал эту отвратную обводку вокруг поля ввода + анимация кнопки">
+      <created>1564697128466</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564697128466</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +152,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Landing page in pure css and html" />
     <MESSAGE value="Added text input field and button &quot;check&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added text input field and button &quot;check&quot;" />
+    <MESSAGE value="все переделал, добавил % между полями ввода + теперь никуда ничего не съезжает + нормальный градиент и наконец-таки убрал эту отвратную обводку вокруг поля ввода + анимация кнопки" />
+    <option name="LAST_COMMIT_MESSAGE" value="все переделал, добавил % между полями ввода + теперь никуда ничего не съезжает + нормальный градиент и наконец-таки убрал эту отвратную обводку вокруг поля ввода + анимация кнопки" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

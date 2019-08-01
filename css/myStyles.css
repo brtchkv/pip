@@ -250,16 +250,28 @@ header {
     background-color: #f6f6f6;
 }
 
-.buttonCheck:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    margin-left: -20px !important;
-    opacity: 0;
-    transition: all 0.8s
+.buttonCheck:active {
+    background-color: wheat;
 }
 
+.buttonNumber {
+    width: 60px;
+    height: 20px;
+    color: black;
+    font-size: 13px;
+}
+
+.buttonNumber:active {
+    background-color: #a9a9a9;
+    border-radius: 6px;
+
+}
+
+#tableButton {
+    margin: 30px 28px 10px;
+    overflow: auto;
+    height: 100px;
+}
 
 @-webkit-keyframes Gradient {
     0% {
@@ -296,6 +308,89 @@ header {
         background-position: 0% 50%
     }
 }
+
+cntr {
+    margin: auto;
+}
+
+.btn-radio {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn-radio:not(:first-child) {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .btn-radio {
+        display: block;
+        float: none;
+    }
+
+    .btn-radio:not(:first-child) {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+.btn-radio svg {
+    fill: none;
+    vertical-align: middle;
+}
+
+.btn-radio svg circle {
+    stroke-width: 2;
+    stroke: #C8CCD4;
+}
+
+.btn-radio svg path {
+    stroke: #ffff;
+}
+
+.btn-radio svg path.inner {
+    stroke-width: 6;
+    stroke-dasharray: 19;
+    stroke-dashoffset: 19;
+}
+
+.btn-radio svg path.outer {
+    stroke-width: 2;
+    stroke-dasharray: 57;
+    stroke-dashoffset: 57;
+}
+
+.btn-radio input {
+    display: none;
+}
+
+.btn-radio input:checked + svg path {
+    transition: all 0.4s ease;
+}
+
+.btn-radio input:checked + svg path.inner {
+    stroke-dashoffset: 38;
+    transition-delay: 0.3s;
+}
+
+.btn-radio input:checked + svg path.outer {
+    stroke-dashoffset: 0;
+}
+
+.btn-radio span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#tableRadio {
+    width: 100px;
+    margin-top: 46px;
+    margin-left: 12px;
+}
+
 
 
 
