@@ -173,7 +173,8 @@ header {
     height: 40%;
     left: 13%;
     top: 25%;
-    background-color: #bfbfbf;
+    mix-blend-mode: luminosity;
+
 }
 
 .yReact > input:hover {
@@ -217,7 +218,7 @@ header {
 
     /*background: #C4C4C4;*/
     /*mix-blend-mode: soft-light;*/
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #f6f6f6;
     border-radius: 15px;
 
     font-family: Roboto Serif;
@@ -247,12 +248,12 @@ header {
 
 }
 
-.buttonCheck:hover {
-    background-color: #f6f6f6;
-}
+/*.buttonCheck:hover {*/
+/*    background-color: #a9a9a9;*/
+/*}*/
 
 .buttonCheck:active {
-    background-color: wheat;
+    background-color: #a9a9a9;
 }
 
 .buttonNumber {
