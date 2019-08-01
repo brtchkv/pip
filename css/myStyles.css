@@ -8,16 +8,17 @@ body {
     animation: Gradient 15s ease infinite;
     background: linear-gradient(-45deg, #FFB74B, #c34a36, #5566DF);
     background-size: 400% 400%;
+
 }
 
 
 /* Rectangle */
 .mainReact {
-    position: absolute;
+    position: relative;
     width: 925px;
     height: 417px;
-    left: 178px;
-    top: 151px;
+    left: 14%;
+    top: 21.6%;
 
     background: rgba(205, 205, 205, 0.90);
     mix-blend-mode: hard-light;
@@ -60,7 +61,7 @@ body {
     left: 265px;
     top: 182px;
 
-    font-family: Roboto;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -94,7 +95,7 @@ body {
     left: 540px;
     top: 273px;
 
-    font-family: Roboto;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -127,7 +128,7 @@ body {
     left: 256px;
     top: 273px;
 
-    font-family: Roboto;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -151,6 +152,24 @@ body {
     border-radius: 15px;
 }
 
+.yReact > input {
+    font-size: 14px;
+    position: relative;
+    border-radius: 4px;
+    width: 75%;
+    height: 40%;
+    left: 16%;
+    top: 24.5%;
+    color: black;
+    background-color: white;
+    mix-blend-mode: normal;
+
+}
+
+.yReact > input:hover {
+    border-color: Highlight;
+}
+
 
 /* Y: */
 .yLetter {
@@ -160,7 +179,7 @@ body {
     left: 256px;
     top: 471px;
 
-    font-family: Roboto;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -179,7 +198,7 @@ header {
     left: 10px;
     top: 0px;
 
-    font-family: Roboto;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -202,26 +221,32 @@ header {
     background: #C4C4C4;
     mix-blend-mode: soft-light;
     border-radius: 15px;
+
+    font-family: Roboto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+
+}
+
+.buttonCheck:hover {
+    background-color: #f6f6f6;
 }
 
 /* Проверить */
 .buttonLetter {
-    position: absolute;
-    width: 160px;
-    height: 15px;
-    left: 860px;
-    top: 473px;
 
-    font-family: Roboto;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 19px;
-    display: flex;
-    align-items: center;
     text-align: center;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
 
-    color: #422F2F;
 }
 
 
@@ -260,3 +285,4 @@ header {
         background-position: 0% 50%
     }
 }
+
