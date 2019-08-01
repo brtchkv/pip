@@ -5,8 +5,8 @@
     <title>Лаба 1</title>
     <link href="css/myStyles.css" rel="stylesheet">
 </head>
-<body>
 
+<body class="background">
 
 <header>
     Иван Братчиков<br>
@@ -14,34 +14,39 @@
     P3201<br>
 </header>
 
-<main class="mainReact">
+<main class="mainRect">
 
+    <div class="inputFields">
+        <div class="task taskRect">
+            Введите данные на проверку вхождения в область значений данного графика:
+        </div>
+
+        <div class="xRect" id="xField">
+            <span class="xLetter">X:</span>
+        </div>
+
+        <div class="rRect" id="rField">
+            <span class="rParameter">R:</span>
+        </div>
+
+        <div class="yRect" id="yField">
+             <span class="yLetter">
+                Y:
+             </span>
+            <input class="input" maxlength="2" name="text"
+                   placeholder="Введите число от -5 до 5"
+                   style="border: 2px solid #d0d1c7;" title="Введите число" type="text">
+        </div>
+
+        <div class="imageRect">
+            <img class="image" src="css/image.png">
+        </div>
+
+        <button class="buttonCheck buttonLetter hvr-ripple-out">
+            Проверить
+        </button>
+
+    </div>
 </main>
-<div class="imageReact">
-</div>
-<span class="image"></span>
-
-<div class="task">
-    Введите данные на проверку вхождения в область значений данного графика:
-</div>
-<div class="xReact">
-
-</div>
-<div class="x">X:</div>
-<div class="rReact"></div>
-<div class="rParameter">R:</div>
-<div class="yReact">
-    <input class="input" maxlength="8" name="text"
-           placeholder="Введите число от -5 до 5"
-           title="Введите число" type="text">
-</div>
-<div class="yLetter">
-    Y:
-</div>
-<button class="buttonCheck buttonLetter" type="button">
-    Проверить
-</button>
-
-
 </body>
 </html>
