@@ -89,16 +89,24 @@ header {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
+#tableRadio {
+    width: 100px;
+    margin-top: 46px;
+    margin-left: 12px;
+}
+
+
 /* X: */
 .xLetter {
     position: absolute;
     padding: 14px 20px;
+    margin-left: 102px;
     font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
-    text-align: left;
+    text-align: center;
 
     color: #422F2F;
 }
@@ -118,13 +126,34 @@ header {
 
 }
 
+#tableButton {
+    margin: 35px 28px 10px;
+    overflow: auto;
+    height: 100px;
+}
+
+.buttonNumber {
+    width: 60px;
+    height: 20px;
+    color: black;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttonNumber:active {
+    background-color: #a9a9a9;
+    border-radius: 6px;
+
+}
+
 
 /* R: */
 .rParameter {
     position: absolute;
     width: 110px;
     height: 20px;
-    padding: 14px 5px 10px 0px;
+    padding: 14px 1px;
 
     font-family: Roboto Serif;
     font-style: normal;
@@ -153,7 +182,7 @@ header {
 .yLetter {
     position: absolute;
     padding-top: 5%;
-    padding-left: 5%;
+    padding-left: 5.5%;
 
     font-family: Roboto Serif;
     font-style: normal;
@@ -256,24 +285,6 @@ header {
     background-color: #a9a9a9;
 }
 
-.buttonNumber {
-    width: 60px;
-    height: 20px;
-    color: black;
-    font-size: 13px;
-}
-
-.buttonNumber:active {
-    background-color: #a9a9a9;
-    border-radius: 6px;
-
-}
-
-#tableButton {
-    margin: 30px 28px 10px;
-    overflow: auto;
-    height: 100px;
-}
 
 @-webkit-keyframes Gradient {
     0% {
@@ -385,12 +396,6 @@ cntr {
 .btn-radio span {
     display: inline-block;
     vertical-align: middle;
-}
-
-#tableRadio {
-    width: 100px;
-    margin-top: 46px;
-    margin-left: 12px;
 }
 
 
