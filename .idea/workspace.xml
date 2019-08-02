@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/myStyles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/myStyles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +100,7 @@
       <workItem from="1564161140466" duration="451000" />
       <workItem from="1564582211177" duration="9229000" />
       <workItem from="1564615532494" duration="7173000" />
-      <workItem from="1564654013629" duration="43165000" />
+      <workItem from="1564654013629" duration="45356000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -173,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564753052702</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="minor enhancement">
+      <created>1564756216578</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564756216578</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
