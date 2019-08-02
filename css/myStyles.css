@@ -232,7 +232,8 @@ header {
     position: absolute;
     width: 181px;
     height: 185px;
-    margin: 20px 15px 15px 19px;
+    margin-top: 3.4%;
+    margin-left: 4.5%;
     border-radius: 36px;
 }
 
