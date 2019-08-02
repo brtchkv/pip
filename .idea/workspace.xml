@@ -101,7 +101,7 @@
       <workItem from="1564161140466" duration="451000" />
       <workItem from="1564582211177" duration="9229000" />
       <workItem from="1564615532494" duration="7173000" />
-      <workItem from="1564654013629" duration="34711000" />
+      <workItem from="1564654013629" duration="40499000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564709274981</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added svg of the graph">
+      <created>1564713747108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1564713747108</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +191,8 @@
     <MESSAGE value="кнопки и доп анимация (radio и X координаты)" />
     <MESSAGE value="overflow(hidden)" />
     <MESSAGE value="minor enhancement" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor enhancement" />
+    <MESSAGE value="added svg of the graph" />
+    <option name="LAST_COMMIT_MESSAGE" value="added svg of the graph" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

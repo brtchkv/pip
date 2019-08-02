@@ -14,7 +14,24 @@ header {
     display: flex;
     align-items: center;
 
-    color: #422f2f;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+    position: fixed;
+    width: 365px;
+    height: 67px;
+    left: 21px;
+    bottom: 0px;
+    font-family: Roboto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .background {
@@ -50,6 +67,7 @@ header {
     padding: 40px 80px 30px 80px;
     height: 329px;
     width: 389px;
+    color: rgba(0, 0, 0, 1);
 }
 
 .taskRect {
@@ -74,7 +92,8 @@ header {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #422f2f;
+    color: rgba(0, 0, 0, 1);
+
 }
 
 /* Rectangle 4 */
@@ -89,12 +108,6 @@ header {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-#tableRadio {
-    width: 100px;
-    margin-top: 46px;
-    margin-left: 12px;
-}
-
 
 /* X: */
 .xLetter {
@@ -107,8 +120,31 @@ header {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+}
 
-    color: #422F2F;
+#tableButton {
+    margin: 35px 28px 10px;
+    overflow: auto;
+    height: 100px;
+}
+
+.buttonNumber {
+    width: 60px;
+    height: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);;
+}
+
+.buttonNumber:disabled {
+    background-color: #a9a9a9;
+    border-radius: 6px;
+}
+
+.buttonNumber:active {
+    background-color: #a9a9a9;
+    border-radius: 6px;
 }
 
 
@@ -126,27 +162,6 @@ header {
 
 }
 
-#tableButton {
-    margin: 35px 28px 10px;
-    overflow: auto;
-    height: 100px;
-}
-
-.buttonNumber {
-    width: 60px;
-    height: 20px;
-    color: black;
-    font-size: 13px;
-    border-radius: 5px;
-    border: none;
-}
-
-.buttonNumber:active {
-    background-color: #a9a9a9;
-    border-radius: 6px;
-
-}
-
 
 /* R: */
 .rParameter {
@@ -161,16 +176,94 @@ header {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-
-    color: #422F2F;
 }
 
+#tableRadio {
+    width: 100px;
+    margin-top: 46px;
+    margin-left: 12px;
+}
 
+cntr {
+    margin: auto;
+}
+
+.btn-radio {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btn-radio:not(:first-child) {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .btn-radio {
+        display: block;
+        float: none;
+    }
+
+    .btn-radio:not(:first-child) {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+.btn-radio svg {
+    fill: none;
+    vertical-align: middle;
+}
+
+.btn-radio svg circle {
+    stroke-width: 2;
+    stroke: #C8CCD4;
+}
+
+.btn-radio svg path {
+    stroke: rgba(255, 255, 255, 0.85);
+}
+
+.btn-radio svg path.inner {
+    stroke-width: 6;
+    stroke-dasharray: 19;
+    stroke-dashoffset: 19;
+}
+
+.btn-radio svg path.outer {
+    stroke-width: 2;
+    stroke-dasharray: 57;
+    stroke-dashoffset: 57;
+}
+
+.btn-radio input {
+    display: none;
+}
+
+.btn-radio input:checked + svg path {
+    transition: all 0.4s ease;
+}
+
+.btn-radio input:checked + svg path.inner {
+    stroke-dashoffset: 38;
+    transition-delay: 0.3s;
+}
+
+.btn-radio input:checked + svg path.outer {
+    stroke-dashoffset: 0;
+}
+
+.btn-radio span {
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* Rectangle 5 */
 .yRect {
     position: absolute;
-    width: 420.5px;
+    width: 420px;
     height: 60px;
     margin-top: 50%;
     /*mix-blend-mode: soft-light;*/
@@ -190,8 +283,6 @@ header {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-
-    color: #422F2F;
 }
 
 .yRect > input {
@@ -203,12 +294,18 @@ header {
     left: 13%;
     top: 25%;
     mix-blend-mode: luminosity;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
 
 }
 
-.yReact > input:hover {
-    border-color: Highlight;
+input[type="text"]::placeholder {
+
+    /* Firefox, Chrome, Opera */
+    text-align: center;
 }
+
 
 
 /* Rectangle */
@@ -235,6 +332,7 @@ header {
     margin-top: 3.4%;
     margin-left: 4.5%;
     border-radius: 36px;
+    background-color: rgba(255, 255, 255, 0.85);
 }
 
 
@@ -248,7 +346,7 @@ header {
 
     /*background: #C4C4C4;*/
     /*mix-blend-mode: soft-light;*/
-    background-color: #f6f6f6;
+    background-color: rgba(255, 255, 255, 0.85);;
     border-radius: 15px;
 
     font-family: Roboto Serif;
@@ -273,7 +371,7 @@ header {
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: black;
+    color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 
 }
@@ -323,81 +421,6 @@ header {
     }
 }
 
-cntr {
-    margin: auto;
-}
-
-.btn-radio {
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.btn-radio:not(:first-child) {
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 480px) {
-    .btn-radio {
-        display: block;
-        float: none;
-    }
-
-    .btn-radio:not(:first-child) {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-}
-
-.btn-radio svg {
-    fill: none;
-    vertical-align: middle;
-}
-
-.btn-radio svg circle {
-    stroke-width: 2;
-    stroke: #C8CCD4;
-}
-
-.btn-radio svg path {
-    stroke: #ffff;
-}
-
-.btn-radio svg path.inner {
-    stroke-width: 6;
-    stroke-dasharray: 19;
-    stroke-dashoffset: 19;
-}
-
-.btn-radio svg path.outer {
-    stroke-width: 2;
-    stroke-dasharray: 57;
-    stroke-dashoffset: 57;
-}
-
-.btn-radio input {
-    display: none;
-}
-
-.btn-radio input:checked + svg path {
-    transition: all 0.4s ease;
-}
-
-.btn-radio input:checked + svg path.inner {
-    stroke-dashoffset: 38;
-    transition-delay: 0.3s;
-}
-
-.btn-radio input:checked + svg path.outer {
-    stroke-dashoffset: 0;
-}
-
-.btn-radio span {
-    display: inline-block;
-    vertical-align: middle;
-}
 
 
 
