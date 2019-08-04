@@ -20,6 +20,7 @@
 
 <main class="mainRect animated zoomIn fast">
     <form action="script.cgi" method="GET">
+        <input autocomplete="off" id="xValue" name="x" type="hidden" value="">
     <div class="inputFields">
         <div class="task taskRect">
             <div class="headerText">
@@ -29,39 +30,43 @@
 
         <div class="xRect" id="xField">
             <span class="xLetter">X</span>
-            <table id="tableButton">
+            <table id="tableButton" onclick="regularTableX()">
 
                 <tr>
                     <td>
-                        <button class="buttonNumber">-2</button>
+                        <button class="buttonNumber" id="-2" name="x" onclick="mindX(this.id)" type="button">-2</button>
                     </td>
                     <td>
-                        <button class="buttonNumber">-1.5</button>
+                        <button class="buttonNumber" id="-1.5" name="x" onclick="mindX(this.id)" type="button">-1.5
+                        </button>
                     </td>
                     <td>
-                        <button class="buttonNumber">-1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="buttonNumber">-0.5</button>
-                    </td>
-                    <td>
-                        <button class="buttonNumber">0</button>
-                    </td>
-                    <td>
-                        <button class="buttonNumber">0.5</button>
+                        <button class="buttonNumber" id="-1" name="x" onclick="mindX(this.id)" type="button">-1</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button class="buttonNumber">1</button>
+                        <button class="buttonNumber" id="-0.5" name="x" onclick="mindX(this.id)" type="button">-0.5
+                        </button>
                     </td>
                     <td>
-                        <button class="buttonNumber">1.5</button>
+                        <button class="buttonNumber" id="0" name="x" onclick="mindX(this.id)" type="button">0</button>
                     </td>
                     <td>
-                        <button class="buttonNumber">2</button>
+                        <button class="buttonNumber" id="0.5" name="x" onclick="mindX(this.id)" type="button">0.5
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttonNumber" id="1" name="x" onclick="mindX(this.id)" type="button">1</button>
+                    </td>
+                    <td>
+                        <button class="buttonNumber" id="1.5" name="x" onclick="mindX(this.id)" type="button">1.5
+                        </button>
+                    </td>
+                    <td>
+                        <button class="buttonNumber" id="2" name="x" onclick="mindX(this.id)" type="button">2</button>
                     </td>
                 </tr>
             </table>
@@ -76,11 +81,11 @@
         <div class="rRect" id="rField">
             <span class="rParameter">R</span>
             <div class="cntr">
-                <table id="tableRadio">
+                <table id="tableRadio" onclick="regularTableR()">
                     <tr>
                         <td>
                             <label class="btn-radio" for="rdo-1">
-                                <input id="rdo-1" name="radio-grp" type="radio">
+                                <input id="rdo-1" name="r" type="radio" value="1">
                                 <svg height="20px" viewBox="0 0 20 20" width="20px">
                                     <circle cx="10" cy="10" r="9"></circle>
                                     <path class="inner"
@@ -94,7 +99,7 @@
 
                         <td>
                             <label class="btn-radio" for="rdo-2">
-                                <input id="rdo-2" name="radio-grp" type="radio">
+                                <input id="rdo-2" name="r" type="radio" value="2">
                                 <svg height="20px" viewBox="0 0 20 20" width="20px">
                                     <circle cx="10" cy="10" r="9"></circle>
                                     <path class="inner"
@@ -109,7 +114,7 @@
                     <tr>
                         <td>
                             <label class="btn-radio" for="rdo-3">
-                                <input id="rdo-3" name="radio-grp" type="radio">
+                                <input id="rdo-3" name="r" type="radio" value="3">
                                 <svg height="20px" viewBox="0 0 20 20" width="20px">
                                     <circle cx="10" cy="10" r="9"></circle>
                                     <path class="inner"
@@ -123,9 +128,9 @@
 
                         <td>
                             <label class="btn-radio" for="rdo-4">
-                                <input id="rdo-4" name="radio-grp" type="radio">
+                                <input id="rdo-4" name="r" type="radio" value="4">
                                 <svg height="20px" viewBox="0 0 20 20" width="20px">
-                                    <circle cx="10" cy="10" r="9"></circle>
+                                    <circle cx="10" cy="10" id="test" r="9"></circle>
                                     <path class="inner"
                                           d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"></path>
                                     <path class="outer"
@@ -139,7 +144,7 @@
 
                         <td>
                             <label class="btn-radio" for="rdo-5">
-                                <input id="rdo-5" name="radio-grp" type="radio">
+                                <input id="rdo-5" name="r" type="radio" value="5">
                                 <svg height="20px" viewBox="0 0 20 20" width="20px">
                                     <circle cx="10" cy="10" r="9"></circle>
                                     <path class="inner"
@@ -153,7 +158,7 @@
                         </td>
                         <td>
                             <label class="btn-radio" for="rdo-6">
-                                <input id="rdo-6" name="radio-grp" type="radio">
+                                <input id="rdo-6" name="r" type="radio" value="6">
                                 <svg height="20px" viewBox="0 0 20 20" width="20px">
                                     <circle cx="10" cy="10" r="9"></circle>
                                     <path class="inner"
@@ -174,9 +179,40 @@
              <span class="yLetter">
                 Y
              </span>
-            <input class="input" maxlength="8" name="y"
+            <input autocomplete="off" class="input" id="y" maxlength="8"
                    placeholder="Введите число от -5 до 5"
-                   style="border: 2px solid #d0d1c7;" title="Введите число" type="text">
+                   name="y" style="border: 2px solid #d0d1c7;" title="Введите число" type="text">
+
+            <script type="text/javascript">
+
+                $('#y').on('input', function (evt) {
+                    let value = evt.target.value;
+
+                    if (value.length === 0) {
+                        evt.target.style = 'border: 2px solid #d0d1c7;';
+                        evt.target.placeholder = 'Введите число от -5 до 5';
+                        return;
+                    }
+
+                    if ($.isNumeric(value) || value == "-") {
+                        evt.target.style = 'border: 2px solid #d0d1c7;';
+                    } else {
+                        evt.target.className = 'invalid';
+                        evt.target.placeholder = 'Пожалуйста, вводите только цифры! [-5;5]';
+                        evt.target.value = '';
+                        evt.target.style = 'border: 2px solid red; mix-blend-mode: normal;';
+                    }
+
+                    if ((-5 > value) || (value > 5)) {
+                        evt.target.className = 'invalid';
+                        evt.target.placeholder = 'Вы вышли за рамки дозволенного! [-5;5]';
+                        evt.target.value = '';
+                        evt.target.style = 'border: 2px solid red; mix-blend-mode: normal;';
+                    }
+                })
+
+            </script>
+
         </div>
         <div class="imageRect">
             <div class="imageRect image">
@@ -222,9 +258,57 @@
             </div>
         </div>
 
-        <button class="buttonCheck buttonLetter" type="submit">
+        <button class="buttonCheck buttonLetter" onclick="checkFields()" type="submit">
             Проверить
         </button>
+
+        <script>
+
+            function checkFields() {
+
+                let value = $("#y").val();
+                if (value.length === 0) {
+                    $("#y").attr("style", "border: 2px solid red; mix-blend-mode: normal;");
+                    $("#y").attr("placeholder", "Введите число от -5 до 5");
+                    event.preventDefault();
+                }
+
+                if (!$('input[type="radio"]').is(":checked")) {
+                    $('circle').each(function () {
+                        $(this).attr("style", "stroke: red; stroke-width: 1.5;");
+                    });
+                    event.preventDefault();
+                }
+
+                if (!$("#xValue").val()) {
+                    $('.buttonNumber').each(function () {
+                        $(this).attr("style", "border: 2px solid red;");
+                    });
+                    event.preventDefault();
+                }
+
+            }
+
+            function regularTableR() {
+                $("#tableRadio").attr("style", "margin-top: 46px;\n" +
+                    "    margin-left: 12.1%;\n" +
+                    "    border: none;\n" +
+                    "    align-items: center;\n" +
+                    "    padding-right: 5px;\n" +
+                    "    padding-left: 5px;");
+            }
+
+            function regularTableX() {
+                $('.buttonNumber').each(function () {
+                    $(this).attr("style", "stroke-width: 2; stroke: #C8CCD4;");
+                });
+            }
+
+            function mindX(clickedId) {
+                document.getElementById("xValue").value = clickedId;
+            }
+
+        </script>
 
     </div>
     </form>
