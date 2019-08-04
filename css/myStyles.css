@@ -19,9 +19,7 @@ header {
 
 footer {
     position: fixed;
-    width: 365px;
-    height: 67px;
-    left: 21px;
+    padding: 10px 10px 10px 21px;
     bottom: 0px;
     font-family: Roboto Serif;
     font-style: normal;
@@ -134,7 +132,7 @@ footer {
     font-size: 13px;
     border-radius: 5px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.8);;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .buttonNumber:disabled {
@@ -147,6 +145,11 @@ footer {
     border-radius: 6px;
 }
 
+.buttonNumber.selected {
+    background-color: rgba(185, 185, 185, 0.85);
+    border-radius: 6px;
+    /*color: rgba(255, 255, 255, 0.85);*/
+}
 
 /* Rectangle 3 */
 .rRect {
