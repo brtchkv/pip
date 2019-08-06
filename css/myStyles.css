@@ -186,8 +186,6 @@ footer {
     margin-left: 13%;
     align-content: center;
     align-items: center;
-
-
 }
 
 cntr {
@@ -272,7 +270,6 @@ cntr {
     width: 420px;
     height: 60px;
     margin-top: 50%;
-    /*mix-blend-mode: soft-light;*/
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
 }
@@ -307,7 +304,6 @@ cntr {
 }
 
 input[type="text"]::placeholder {
-
     /* Firefox, Chrome, Opera */
     text-align: center;
 }
@@ -321,8 +317,6 @@ input[type="text"]::placeholder {
     height: 220px;
     margin-left: 95%;
     padding: 10px 10px 10px 10px;
-
-    /*mix-blend-mode: soft-light;*/
     background-color: rgba(255, 255, 255, 0.4);
 
     border-radius: 15px;
@@ -348,10 +342,7 @@ input[type="text"]::placeholder {
     height: 40px;
     margin-left: 98.75%;
     margin-top: 51.6%;
-
-    /*background: #C4C4C4;*/
-    /*mix-blend-mode: soft-light;*/
-    background-color: rgba(255, 255, 255, 0.85);;
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
 
     font-family: Roboto Serif;
@@ -367,6 +358,14 @@ input[type="text"]::placeholder {
     overflow: hidden;
 }
 
+/*.buttonCheck:hover {*/
+/*    background-color: #a9a9a9;*/
+/*}*/
+
+.buttonCheck:active {
+    background-color: #a9a9a9;
+}
+
 /* Проверить */
 .buttonLetter {
 
@@ -380,15 +379,6 @@ input[type="text"]::placeholder {
     cursor: pointer;
 
 }
-
-/*.buttonCheck:hover {*/
-/*    background-color: #a9a9a9;*/
-/*}*/
-
-.buttonCheck:active {
-    background-color: #a9a9a9;
-}
-
 
 @-webkit-keyframes Gradient {
     0% {
