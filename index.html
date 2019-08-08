@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Лаба 1</title>
-    <link href="css/myStyles.css" rel="stylesheet">
+    <link href="css/stylesMain.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <script language="text/javascript" src="js/script.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
@@ -18,7 +18,7 @@
 </header>
 
 <main class="mainRect animated zoomIn fast">
-    <form action="script.cgi" method="GET">
+    <form action="script.php" method="GET">
         <input autocomplete="off" id="xValue" name="x" type="hidden" value="">
         <div class="inputFields">
             <div class="task taskRect">
@@ -209,7 +209,7 @@
 
                         if ((-5 > value) || (value > 5)) {
                             evt.target.className = 'invalid';
-                            evt.target.placeholder = 'Вы вышли за рамки дозволенного!';
+                            evt.target.placeholder = 'Введите число от -5 до 5';
                             evt.target.value = '';
                             evt.target.style = 'border: 2px solid red; mix-blend-mode: normal;';
                         }
