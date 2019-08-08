@@ -33,8 +33,8 @@ footer {
 }
 
 .background {
-    width: 1440px;
-    height: 1440px;
+    width: 400px;
+    height: 400px;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;

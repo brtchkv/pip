@@ -5,9 +5,11 @@
     <meta charset='utf-8'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
     <link href="css/stylesResponse.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
 </head>
 
 <body class="background">
+
 <header>
     Иван Братчиков<br>
     Вариант № 201003<br>
@@ -43,8 +45,22 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
 
 ?>
 
-<main>
+<main class="animated zoomIn fast">
     <table id="tableResponse" cellspacing="15">
+        <a href="index.html" class="close">
+            <script>
+                $(function () {
+                    $('a').click(function (e) {
+                        e.preventDefault();
+                        $('main').addClass('animated zoomOut fast');
+                        let t = $(this);
+                        setTimeout(function () {
+                            location.href = t.attr('href');
+                        }, 200);
+                    });
+                });
+            </script>
+        </a>
         <tbody>
         <tr>
             <td class="etRect">
@@ -56,25 +72,51 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                 </p>
             </td>
             <td>
-                <table id="tableParameters">
-
+                <table id="tableParameters" style="text-align: center;">
+                    <!--                    <thead>-->
+                    <!--                        <tr>-->
+                    <!--                            <th >X</th>-->
+                    <!--                            <th></th>-->
+                    <!--                            <th >Y</th>-->
+                    <!--                            <th></th>-->
+                    <!--                            <th>R</th>-->
+                    <!--                        </tr>-->
+                    <!--                    </thead>-->
                     <tr>
                         <td class="yRect">
                             <span class="parameters" style="font-size: 18px;">X</span>
-                            <?php echo $x ?>
+
+                            <?php
+                            if ($x >= 0) {
+                                echo "<span style='text-align:center;' title=\"$x\">" . floor($x * 100) / 100 . "</span>";
+                            } else {
+                                echo "<span style='text-align:center;' title=\"$x\">" . -floor(abs($x) * 100) / 100 . "</span>";
+                            }
+                            ?>
                         </td>
                         <td style="padding:0 5px 0 5px;"></td>
                         <td class="xRect">
                             <span class="parameters" style="font-size: 18px;">Y</span>
-                            <?php echo $y ?>
+                            <?php
+                            if ($y >= 0) {
+                                echo "<span style='text-align:center;' title=\"$y\">" . floor($y * 100) / 100 . "</span>";
+                            } else {
+                                echo "<span style='text-align:center;' title=\"$y\">" . -floor(abs($y) * 100) / 100 . "</span>";
+                            }
+                            ?>
                         </td>
                         <td style="padding:0 5px 0 5px;"></td>
                         <td class="rRect">
                             <span class="parameters" style="font-size: 18px;">R</span>
-                            <?php echo $r ?>
+                            <?php
+                            if ($r >= 0) {
+                                echo "<span style='text-align:center;' title=\"$r\">" . floor($r * 100) / 100 . "</span>";
+                            } else {
+                                echo "<span style='text-align:center;' title=\"$r\">" - floor(abs($r) * 100) / 100 . "</span>";
+                            }
+                            ?>
                         </td>
                     </tr>
-
                 </table>
             </td>
         </tr>
