@@ -39,7 +39,7 @@ $r = getIfSet($_REQUEST['r']);
 
 $wrongInput = false;
 $correct = false;
-if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
+if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
 
     if ($x >= 0 && $y >= 0 && $y <= -$x + $r) {
         $correct = true;
@@ -60,12 +60,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
             <script>
                 $(function () {
                     $('a').click(function (e) {
-                        e.preventDefault();
                         $('main').addClass('animated zoomOut fast');
-                        let t = $(this);
-                        setTimeout(function () {
-                            location.href = t.attr('href');
-                        }, 200);
                     });
                 });
             </script>
@@ -87,10 +82,8 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                             <span class="parameters" style="font-size: 18px;">X</span>
 
                             <?php
-                            if ($x >= 0 && (!$wrongInput || is_numeric($x))) {
+                            if (!$wrongInput || is_numeric($x)) {
                                 echo "<span style='text-align:center;' title=\"$x\">" . floor(filter($x) * 100) / 100 . "</span>";
-                            } elseif ((!$wrongInput || is_numeric($x))) {
-                                echo "<span style='text-align:center;' title=\"$x\">" . -floor(filter($x) * 100) / 100 . "</span>";
                             } else {
                                 echo "Error";
                             }
@@ -100,10 +93,8 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                         <td class="xRect">
                             <span class="parameters" style="font-size: 18px;">Y</span>
                             <?php
-                            if ($y >= 0 && (!$wrongInput || is_numeric($y))) {
+                            if (!$wrongInput || is_numeric($y)) {
                                 echo "<span style='text-align:center;' title=\"$y\">" . floor(filter($y) * 100) / 100 . "</span>";
-                            } elseif ((!$wrongInput || is_numeric($y))) {
-                                echo "<span style='text-align:center;' title=\"$y\">" . -floor(filter($y) * 100) / 100 . "</span>";
                             } else {
                                 echo "Error";
                             }
@@ -115,8 +106,6 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r)) {
                             <?php
                             if ($r >= 0 && (!$wrongInput || is_numeric($r))) {
                                 echo "<span style='text-align:center;' title=\"$r\">" . floor(filter($r) * 100) / 100 . "</span>";
-                            } elseif ((!$wrongInput || is_numeric($r))) {
-                                echo "<span style='text-align:center;' title=\"$r\">" - floor(filter($r) * 100) / 100 . "</span>";
                             } else {
                                 echo "Error";
                             }

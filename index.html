@@ -10,7 +10,7 @@
 </head>
 
 <body class="background">
-
+<!-- 	min: 950x640   -->
 <header>
     Иван Братчиков<br>
     Вариант № 201003<br>
@@ -262,6 +262,13 @@
 
             <button class="buttonCheck buttonLetter" onclick="checkFields()" type="submit">
                 Проверить
+                <script>
+                    $(function () {
+                        $('.buttonCheck').click(function (e) {
+                            $('main').addClass('animated zoomOut fast');
+                        });
+                    });
+                </script>
             </button>
 
         </div>

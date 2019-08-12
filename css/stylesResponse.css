@@ -1,6 +1,6 @@
 .background {
-    width: 400px;
-    height: 400px;
+    width: 1440px;
+    height: 1440px;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
@@ -173,10 +173,10 @@ main {
 
 .close {
     position: absolute;
-    right: 3.2%;
-    top: 3.2%;
-    width: 25px;
-    height: 25px;
+    right: 4%;
+    top: 3%;
+    width: 20px;
+    height: 20px;
     opacity: 0.3;
 }
 
