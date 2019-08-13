@@ -184,7 +184,7 @@
                     Y
                  </span>
                 <input autocomplete="off" autofocus
-                       class="input" id="y" maxlength="8" name="y"
+                       class="input" id="y" maxlength="4" name="y"
                        onchange="checkData();"
                        onkeyup="checkData();" placeholder="Введите число от -5 до 5" style="border: 2px solid #d0d1c7;"
                        title="Введите число" type="text">
@@ -193,7 +193,7 @@
                     $("#y").on('input', function (evt) {
                         let value = evt.target.value;
 
-                        if ($.isNumeric(value) || value == "-") {
+                        if ($.isNumeric(value) || value == "-" || value == "") {
                             evt.target.style = 'border: 2px solid #d0d1c7;';
                         } else {
                             evt.target.className = 'invalid';
@@ -262,13 +262,6 @@
 
             <button class="buttonCheck buttonLetter" onclick="checkFields()" type="submit">
                 Проверить
-                <script>
-                    $(function () {
-                        $('.buttonCheck').click(function (e) {
-                            $('main').addClass('animated zoomOut fast');
-                        });
-                    });
-                </script>
             </button>
 
         </div>

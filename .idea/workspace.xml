@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="пофикшен возможный неправильный ввод данных через ссылку + &quot;округление&quot; параметров (чтобы не зоходили за границы блоков)">
+    <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesResponse.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesResponse.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +109,8 @@
       <workItem from="1564654013629" duration="71721000" />
       <workItem from="1565256837800" duration="10184000" />
       <workItem from="1565280906130" duration="17588000" />
-      <workItem from="1565648316153" duration="1008000" />
+      <workItem from="1565648316153" duration="1188000" />
+      <workItem from="1565654420765" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -239,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565309239010</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="пофиксил отображение отрицательных чисел и добавил анимацию при переходе к таблице">
+      <created>1565649514789</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565649514789</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +279,8 @@
     <MESSAGE value="добавлена страничка php с таблицей с временем исполнения и текущим временем + результаты проверки и сами переданные аргументы" />
     <MESSAGE value="добавлена анимацию + пофикшено отображение введных параметров и добавлена кнопка вернуться назад" />
     <MESSAGE value="пофикшен возможный неправильный ввод данных через ссылку + &quot;округление&quot; параметров (чтобы не зоходили за границы блоков)" />
-    <option name="LAST_COMMIT_MESSAGE" value="пофикшен возможный неправильный ввод данных через ссылку + &quot;округление&quot; параметров (чтобы не зоходили за границы блоков)" />
+    <MESSAGE value="пофиксил отображение отрицательных чисел и добавил анимацию при переходе к таблице" />
+    <option name="LAST_COMMIT_MESSAGE" value="пофиксил отображение отрицательных чисел и добавил анимацию при переходе к таблице" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
