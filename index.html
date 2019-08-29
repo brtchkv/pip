@@ -37,7 +37,7 @@
                             </button>
                         </td>
                         <td>
-                            <button class="buttonNumber" id="-1.5" name="x" onclick="mindX(this.id)" type="button">-1.5
+                            <button class="buttonNumber" id="-1.5" name="x" onclick="mindX(this.id)" type="button">-1,5
                             </button>
                         </td>
                         <td>
@@ -47,7 +47,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <button class="buttonNumber" id="-0.5" name="x" onclick="mindX(this.id)" type="button">-0.5
+                            <button class="buttonNumber" id="-0.5" name="x" onclick="mindX(this.id)" type="button">-0,5
                             </button>
                         </td>
                         <td>
@@ -55,7 +55,7 @@
                             </button>
                         </td>
                         <td>
-                            <button class="buttonNumber" id="0.5" name="x" onclick="mindX(this.id)" type="button">0.5
+                            <button class="buttonNumber" id="0.5" name="x" onclick="mindX(this.id)" type="button">0,5
                             </button>
                         </td>
                     </tr>
@@ -65,7 +65,7 @@
                             </button>
                         </td>
                         <td>
-                            <button class="buttonNumber" id="1.5" name="x" onclick="mindX(this.id)" type="button">1.5
+                            <button class="buttonNumber" id="1.5" name="x" onclick="mindX(this.id)" type="button">1,5
                             </button>
                         </td>
                         <td>
@@ -188,34 +188,6 @@
                        onchange="checkData();"
                        onkeyup="checkData();" placeholder="Введите число от -5 до 5" style="border: 2px solid #d0d1c7;"
                        title="Введите число" type="text">
-
-                <script type="text/javascript">
-                    $("#y").on('input', function (evt) {
-                        let value = evt.target.value;
-
-                        if ($.isNumeric(value) || value == "-" || value == "") {
-                            evt.target.style = 'border: 2px solid #d0d1c7;';
-                        } else {
-                            evt.target.className = 'invalid';
-                            evt.target.placeholder = 'Введите число от -5 до 5';
-                            evt.target.value = '';
-                            evt.target.style = 'border: 2px solid red; mix-blend-mode: normal;';
-                        }
-
-                        if (value.length === 0) {
-                            evt.target.style = 'border: 2px solid #d0d1c7;';
-                            evt.target.placeholder = 'Введите число от -5 до 5';
-                        }
-
-                        if ((-5 > value) || (value > 5)) {
-                            evt.target.className = 'invalid';
-                            evt.target.placeholder = 'Введите число от -5 до 5';
-                            evt.target.value = '';
-                            evt.target.style = 'border: 2px solid red; mix-blend-mode: normal;';
-                        }
-                    })
-                </script>
-
             </div>
             <div class="imageRect">
                 <div class="imageRect image">

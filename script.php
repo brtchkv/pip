@@ -28,7 +28,7 @@ function filter($n)
     else if (abs($n) >= 1000000000) return round((abs($n) / 1000000000), 1);
     else if (abs($n) >= 1000000) return round((abs($n) / 1000000), 1);
     else if (abs($n) >= 1000) return round((abs($n) / 1000), 1);
-    else return $n;
+    else return (string)(floor($n * 100) / 100);
 }
 
 
@@ -71,7 +71,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
                 <span style="font-size: 18px;">Время исполнения</span>
                 <p>
                     <?php
-                    printf("%.2f мкс", (microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"]) * 1000000);
+                    echo number_format((microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"]) * 1000000, 2, ",", ".") . " мкс";
                     ?>
                 </p>
             </td>
@@ -83,7 +83,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
 
                             <?php
                             if (!$wrongInput || is_numeric($x)) {
-                                echo "<span style='text-align:center;' title=\"$x\">" . floor(filter($x) * 100) / 100 . "</span>";
+                                echo "<span style='text-align:center;' title=\"$x\">" . str_replace('.', ',', filter($x)) . "</span>";
                             } else {
                                 echo "Error";
                             }
@@ -94,7 +94,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
                             <span class="parameters" style="font-size: 18px;">Y</span>
                             <?php
                             if (!$wrongInput || is_numeric($y)) {
-                                echo "<span style='text-align:center;' title=\"$y\">" . floor(filter($y) * 100) / 100 . "</span>";
+                                echo "<span style='text-align:center;' title=\"$y\">" . str_replace('.', ',', filter($y)) . "</span>";
                             } else {
                                 echo "Error";
                             }
@@ -105,7 +105,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
                             <span class="parameters" style="font-size: 18px;">R</span>
                             <?php
                             if ($r >= 0 && (!$wrongInput || is_numeric($r))) {
-                                echo "<span style='text-align:center;' title=\"$r\">" . floor(filter($r) * 100) / 100 . "</span>";
+                                echo "<span style='text-align:center;' title=\"$r\">" . str_replace('.', ',', filter($r)) . "</span>";
                             } else {
                                 echo "Error";
                             }

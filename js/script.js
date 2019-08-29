@@ -1,6 +1,6 @@
 function checkFields() {
 
-    let value = $("#y").val();
+    let value = $("#y").val().replace(/,/g, '.');
     let correctFields = true;
     if (value.length === 0) {
         $("#y").attr("style", "border: 2px solid red; mix-blend-mode: normal;");
@@ -26,6 +26,7 @@ function checkFields() {
     }
 
     if (correctFields) {
+        document.getElementById("y").value = value;
         $('main').addClass('animated zoomOut fast');
     }
 
@@ -47,4 +48,30 @@ function regularTableX() {
 
 function mindX(clickedId) {
     document.getElementById("xValue").value = clickedId;
+}
+
+function checkData() {
+
+    let value = $("#y").val().replace(/,/g, '.');
+
+    if ($.isNumeric(value) || value == "-" || value == "") {
+        $("#y").attr("style", 'border: 2px solid #d0d1c7;');
+    } else {
+        document.getElementById("y").className = "invalid";
+        $("#y").attr("placeholder", "Введите число от -5 до 5");
+        document.getElementById("y").value = "";
+        $("#y").attr("style", 'border: 2px solid red; mix-blend-mode: normal;');
+    }
+
+    if (value.length === 0) {
+        $("#y").attr("style", 'border: 2px solid #d0d1c7;');
+        $("#y").attr("placeholder", "Введите число от -5 до 5");
+    }
+
+    if ((-5 > value) || (value > 5)) {
+        document.getElementById("y").className = "invalid";
+        $("#y").attr("placeholder", "Введите число от -5 до 5");
+        document.getElementById("y").value = "";
+        $("#y").attr("style", 'border: 2px solid red; mix-blend-mode: normal;');
+    }
 }

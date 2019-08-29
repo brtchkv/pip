@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="" />
+    <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +58,13 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -106,7 +113,10 @@
       <workItem from="1565256837800" duration="10184000" />
       <workItem from="1565280906130" duration="17588000" />
       <workItem from="1565648316153" duration="1188000" />
-      <workItem from="1565654420765" duration="952000" />
+      <workItem from="1565654420765" duration="1203000" />
+      <workItem from="1566372668524" duration="138000" />
+      <workItem from="1566852070869" duration="2285000" />
+      <workItem from="1567075466269" duration="3472000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -248,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565655224997</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="добавлены скриншоты сайта">
+      <created>1565655672781</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1565655672781</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +300,8 @@
     <MESSAGE value="добавлена анимацию + пофикшено отображение введных параметров и добавлена кнопка вернуться назад" />
     <MESSAGE value="пофикшен возможный неправильный ввод данных через ссылку + &quot;округление&quot; параметров (чтобы не зоходили за границы блоков)" />
     <MESSAGE value="пофиксил отображение отрицательных чисел и добавил анимацию при переходе к таблице" />
-    <option name="LAST_COMMIT_MESSAGE" value="пофиксил отображение отрицательных чисел и добавил анимацию при переходе к таблице" />
+    <MESSAGE value="добавлены скриншоты сайта" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлены скриншоты сайта" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
