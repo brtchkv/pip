@@ -9,7 +9,7 @@ function checkFields() {
         correctFields = false;
     }
 
-    if (!$('input[type="radio"]').is(":checked")) {
+    if (!($('input[type="radio"]').is(":checked") || $('#r option').is(":selected"))) {
         $('circle').each(function () {
             $(this).attr("style", "stroke: red; stroke-width: 1.5;");
         });
@@ -74,4 +74,18 @@ function checkData() {
         document.getElementById("y").value = "";
         $("#y").attr("style", 'border: 2px solid red; mix-blend-mode: normal;');
     }
+}
+
+function showTable() {
+    $('#dataTable').removeClass('hide');
+    $('#tableResponse').addClass('hide');
+
+    document.getElementById("historyButton").onclick = hideTable;
+}
+
+function hideTable() {
+    $('#dataTable').addClass('hide');
+    $('#tableResponse').removeClass('hide');
+
+    document.getElementById("historyButton").onclick = showTable;
 }

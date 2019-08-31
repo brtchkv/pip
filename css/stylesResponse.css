@@ -201,7 +201,47 @@ main {
     transform: rotate(-45deg);
 }
 
+.hide {
+    display: none;
+}
 
+#dataTable,
+#tableBody > td {
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 200px;
+    margin: 14% auto auto;
+    width: 402px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(205, 205, 205);
+}
+
+.historyButton {
+    position: absolute;
+    right: 4%;
+    top: 73%;
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-left: 80%;
+    cursor: pointer;
+    background: none;
+}
+
+.historyButton svg {
+    width: 32px;
+    height: 32px;
+}
 
 
 
