@@ -355,9 +355,6 @@ input[type="text"]::placeholder {
     overflow: hidden;
 }
 
-/*.buttonCheck:hover {*/
-/*    background-color: #a9a9a9;*/
-/*}*/
 
 .buttonCheck:active {
     background-color: #a9a9a9;

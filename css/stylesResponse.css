@@ -214,33 +214,37 @@ main {
 
 .tableFixHead {
     overflow-y: auto;
-    height: 200px;
-    margin: 14% auto auto;
-    width: 402px;
+    height: 250px;
+    margin: 10% auto auto;
+    width: 452px;
 }
 
 .tableFixHead thead th {
     position: sticky;
     top: 0;
-    background-color: rgb(205, 205, 205);
+    background-color: rgb(215, 215, 215);
+    background-blend-mode: hard-light;
 }
 
 .historyButton {
     position: absolute;
-    right: 4%;
-    top: 73%;
-    width: 32px;
-    height: 32px;
+    right: 3.5%;
+    top: 88%;
+    width: 30px;
+    height: 30px;
     border-radius: 5px;
-    margin-top: 10%;
-    margin-left: 80%;
     cursor: pointer;
     background: none;
 }
 
+.historyButton svg:hover {
+    fill-opacity: .9;
+}
+
 .historyButton svg {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+    fill-opacity: 0.35;
 }
 
 

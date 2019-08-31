@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesMain.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/stylesResponse.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesResponse.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +115,7 @@
       <workItem from="1565654420765" duration="1203000" />
       <workItem from="1566372668524" duration="138000" />
       <workItem from="1566852070869" duration="2285000" />
-      <workItem from="1567075466269" duration="36727000" />
+      <workItem from="1567075466269" duration="39120000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567079568886</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="добавил хранение истории попыток в session, также добавил кнопку отображения и скрытия таблицы с этой историей">
+      <created>1567211335378</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1567211335378</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +315,8 @@
     <MESSAGE value="пофиксил отображение отрицательных чисел и добавил анимацию при переходе к таблице" />
     <MESSAGE value="добавлены скриншоты сайта" />
     <MESSAGE value="полностью перенес все JS скрипты в отдельный файл + добавил поддержку запятой в цифрах" />
-    <option name="LAST_COMMIT_MESSAGE" value="полностью перенес все JS скрипты в отдельный файл + добавил поддержку запятой в цифрах" />
+    <MESSAGE value="добавил хранение истории попыток в session, также добавил кнопку отображения и скрытия таблицы с этой историей" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил хранение истории попыток в session, также добавил кнопку отображения и скрытия таблицы с этой историей" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
