@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesMain.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/stylesResponse.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesResponse.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/2.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +114,7 @@
       <workItem from="1565654420765" duration="1203000" />
       <workItem from="1566372668524" duration="138000" />
       <workItem from="1566852070869" duration="2285000" />
-      <workItem from="1567075466269" duration="39120000" />
+      <workItem from="1567075466269" duration="42188000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -278,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567211335378</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="немножка дизайн улучшений">
+      <created>1567242412910</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1567242412910</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +322,8 @@
     <MESSAGE value="добавлены скриншоты сайта" />
     <MESSAGE value="полностью перенес все JS скрипты в отдельный файл + добавил поддержку запятой в цифрах" />
     <MESSAGE value="добавил хранение истории попыток в session, также добавил кнопку отображения и скрытия таблицы с этой историей" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил хранение истории попыток в session, также добавил кнопку отображения и скрытия таблицы с этой историей" />
+    <MESSAGE value="немножка дизайн улучшений" />
+    <option name="LAST_COMMIT_MESSAGE" value="немножка дизайн улучшений" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
