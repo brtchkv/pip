@@ -202,7 +202,7 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
                         r[++j] = '</td><td width="134px">';
                         r[++j] = obj.r.toString().replace(".", ",");
                         r[++j] = '</td><td width="134px">';
-                        r[++j] = obj.result === "true" ? 'Попал' : 'Мимо';
+                        r[++j] = obj.result === "true" ? '<p style="color:#008000;text-align:center;">Попал</p>' : '<p style="color:#B22222;text-align:center;">Мимо</p>';
                         r[++j] = '</td></tr>';
                     }
                     $('#tableBody').html(r.join(''));
