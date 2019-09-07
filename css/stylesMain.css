@@ -1,11 +1,9 @@
 header {
-    position: fixed;
-    width: 365px;
-    height: 67px;
+    position: absolute;
     left: 0px;
     top: 0px;
     padding: 10px 10px 10px 21px;
-    font-family: Serif;
+    font-family: Roboto Serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -17,7 +15,7 @@ header {
 }
 
 footer {
-    position: fixed;
+    position: absolute;
     padding: 10px 10px 10px 21px;
     bottom: 0px;
     font-family: Roboto Serif;

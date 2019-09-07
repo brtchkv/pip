@@ -24,12 +24,14 @@ function getIfSet(&$value, $default = null)
     return isset($value) ? $value : $default;
 }
 
+
 function filter($n)
 {
-    if (abs($n) >= 1000000000000) return round((abs($n) / 1000000000000), 1);
-    else if (abs($n) >= 1000000000) return round((abs($n) / 1000000000), 1);
-    else if (abs($n) >= 1000000) return round((abs($n) / 1000000), 1);
-    else if (abs($n) >= 1000) return round((abs($n) / 1000), 1);
+    if (abs($n) >= 1000000000000000) return substr((string)($n), 0, 3) . "…";
+    else if (abs($n) >= 1000000000000) return round(($n / 1000000000000)) . "k^4";
+    else if (abs($n) >= 1000000000) return round(($n / 1000000000), 1) . "kkk";
+    else if (abs($n) >= 1000000) return round(($n / 1000000), 1) . "kk";
+    else if (abs($n) >= 1000) return round(($n / 1000), 1) . "k";
     else return (string)(floor($n * 100) / 100);
 }
 
@@ -190,22 +192,32 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
             <script type="text/javascript">
                 let rxp = /{([^}]+)}/g,
                     curMatch;
-                let r = [], j = -1;
+                let rows = [], j = -1;
                 if (sessionStorage.userData) {
                     userAttempts = sessionStorage.getItem('userData');
                     while (curMatch = rxp.exec(userAttempts)) {
                         obj = JSON.parse("{" + curMatch[1] + "}");
-                        r[++j] = '<tr><td width="134px">';
-                        r[++j] = obj.x.toString().replace(".", ",");
-                        r[++j] = '</td><td width="134px">';
-                        r[++j] = obj.y.toString().replace(".", ",");
-                        r[++j] = '</td><td width="134px">';
-                        r[++j] = obj.r.toString().replace(".", ",");
-                        r[++j] = '</td><td width="134px">';
-                        r[++j] = obj.result === "true" ? '<p style="color:#008000;text-align:center;">Попал</p>' : '<p style="color:#B22222;text-align:center;">Мимо</p>';
-                        r[++j] = '</td></tr>';
+                        let x = obj.x.toString().replace(".", ",").length > 15 ?
+                            (obj.x.toString().replace(".", ",").substring(0, 15) + "…") :
+                            obj.x.toString().replace(".", ",");
+                        let y = obj.y.toString().replace(".", ",").length > 15 ?
+                            (obj.y.toString().replace(".", ",").substring(0, 15) + "…") :
+                            obj.y.toString().replace(".", ",");
+                        let r = obj.r.toString().replace(".", ",").length > 15 ?
+                            (obj.r.toString().replace(".", ",").substring(0, 15) + "…") :
+                            obj.r.toString().replace(".", ",");
+
+                        rows[++j] = '<tr><td width="134px">';
+                        rows[++j] = '<span title=\"' + obj.x.toString().replace(".", ",") + '\"' + '>' + x + '</span>';
+                        rows[++j] = '</td><td width="134px">';
+                        rows[++j] = '<span title=\"' + obj.y.toString().replace(".", ",") + '\"' + '>' + y + '</span>';
+                        rows[++j] = '</td><td width="134px">';
+                        rows[++j] = '<span title=\"' + obj.r.toString().replace(".", ",") + '\"' + '>' + r + '</span>';
+                        rows[++j] = '</td><td width="134px">';
+                        rows[++j] = obj.result === "true" ? '<p style="color:#008000;text-align:center;">Попал</p>' : '<p style="color:#B22222;text-align:center;">Мимо</p>';
+                        rows[++j] = '</td></tr>';
                     }
-                    $('#tableBody').html(r.join(''));
+                    $('#tableBody').html(rows.join(''));
                 }
             </script>
             </tbody>
