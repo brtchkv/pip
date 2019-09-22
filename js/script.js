@@ -26,7 +26,6 @@ function checkFields() {
     }
 
     if (correctFields) {
-        document.getElementById("y").value = value;
         $('main').addClass('animated zoomOut fast');
     }
 

@@ -7,7 +7,6 @@
     <link href="css/stylesResponse.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <script language="text/javascript" src="js/script.js" type="text/javascript"></script>
-
 </head>
 
 <body class="background">
@@ -35,14 +34,14 @@ function filter($n)
     else return (string)(floor($n * 100) / 100);
 }
 
-$y = getIfSet($_REQUEST['y']);
-$x = getIfSet($_REQUEST['x']);
-$r = getIfSet($_REQUEST['r']);
+$y = str_replace(',', '.', getIfSet($_REQUEST['y']));
+$x = str_replace(',', '.', getIfSet($_REQUEST['x']));
+$r = str_replace(',', '.', getIfSet($_REQUEST['r']));
 
 
 $wrongInput = false;
 $correctNumbers = false;
-if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
+if (is_numeric($x) && is_numeric($y) && is_numeric($r) && ($r <= 6 && $r >= 1) && ($y >= -5 && 5 >= $y) && ($x >= -2 && 2 >= $x)) {
 
     if ($x >= 0 && $y >= 0 && $y <= -$x + $r) {
         $correctNumbers = true;
@@ -58,9 +57,9 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
         }
 
         let obj = {
-            x: "<?php echo $x; ?>",
-            y: "<?php echo $y; ?>",
-            r: "<?php echo $r; ?>",
+            x: Number("<?php echo $x; ?>").toString(),
+            y: Number("<?php echo $y; ?>").toString(),
+            r: Number("<?php echo $r; ?>").toString(),
             result: "<?php echo ($correctNumbers) ? 'true' : 'false'; ?>"
         };
         let allData = [];
@@ -197,13 +196,13 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
                     userAttempts = sessionStorage.getItem('userData');
                     while (curMatch = rxp.exec(userAttempts)) {
                         obj = JSON.parse("{" + curMatch[1] + "}");
-                        let x = obj.x.toString().replace(".", ",").length > 15 ?
+                        let x = obj.x.toString().length > 15 ?
                             (obj.x.toString().replace(".", ",").substring(0, 15) + "…") :
                             obj.x.toString().replace(".", ",");
-                        let y = obj.y.toString().replace(".", ",").length > 15 ?
+                        let y = obj.y.toString().length > 15 ?
                             (obj.y.toString().replace(".", ",").substring(0, 15) + "…") :
                             obj.y.toString().replace(".", ",");
-                        let r = obj.r.toString().replace(".", ",").length > 15 ?
+                        let r = obj.r.toString().length > 15 ?
                             (obj.r.toString().replace(".", ",").substring(0, 15) + "…") :
                             obj.r.toString().replace(".", ",");
 
@@ -221,7 +220,6 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && $r > 0) {
                 }
             </script>
             </tbody>
-
         </table>
     </div>
 
