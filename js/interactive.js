@@ -1,6 +1,9 @@
 $(document).ready(function () {
     $('#canvas').click(function (event) {
 
+        let width = $('#canvas').width();
+        let height = $('#canvas').height();
+
         let r = $('input[type="radio"]:checked').val();
 
         if (!r) {
@@ -10,12 +13,8 @@ $(document).ready(function () {
             return;
         }
 
-        let offset = $(this).offset();
-        let relativeX = event.pageX - offset.left;
-        let relativeY = event.pageY - offset.top;
-
-        let width = $(this).width();
-        let height = $(this).height();
+        let relativeX = event.pageX - $('#canvas').offset().left;
+        let relativeY = event.pageY - $('#canvas').offset().top;
 
         let x = (relativeX - (width / 2)) / width * 2.7;
         let y = ((height / 2) - relativeY) / height * 2.7;

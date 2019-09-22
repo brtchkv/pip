@@ -118,7 +118,7 @@
       <workItem from="1568306095637" duration="5618000" />
       <workItem from="1569146071338" duration="21000" />
       <workItem from="1569146163444" duration="161000" />
-      <workItem from="1569168191624" duration="9244000" />
+      <workItem from="1569168191624" duration="9542000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -323,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569182636812</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="добавлено отображение попыток и интерактивный ввод координат">
+      <created>1569182666935</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1569182666935</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
