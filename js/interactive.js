@@ -27,6 +27,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+
+    function drawCircle(x, y, result) {
+        if (result === 'true')
+            ctx.fillStyle = 'rgb(255, 255, 255)';
+        else
+            ctx.fillStyle = "#3E97FF";
+        ctx.beginPath();
+        ctx.arc(x, y, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+    }
+
     let canvas = $('#canvas');
     let ctx = canvas[0].getContext('2d');
     let rxp = /{([^}]+)}/g,
@@ -42,16 +53,6 @@ $(document).ready(function () {
             let y = (height * (2.7 * obj.r - 2 * obj.y)) / (5.4 * obj.r);
             drawCircle(x, y, obj.result);
         }
-    }
-
-    function drawCircle(x, y, result) {
-        if (result === 'true')
-            ctx.fillStyle = 'rgb(255, 255, 255)';
-        else
-            ctx.fillStyle = "#3E97FF";
-        ctx.beginPath();
-        ctx.arc(x, y, 2.5, 0, Math.PI * 2);
-        ctx.fill();
     }
 
 });
