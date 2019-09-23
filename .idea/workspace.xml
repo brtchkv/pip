@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f4efffe-3778-4654-a380-6744365ee6ad" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/interactive.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/interactive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesMain.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesMain.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/stylesResponse.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesResponse.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.php" beforeDir="false" afterPath="$PROJECT_DIR$/script.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +122,7 @@
       <workItem from="1568306095637" duration="5618000" />
       <workItem from="1569146071338" duration="21000" />
       <workItem from="1569146163444" duration="161000" />
-      <workItem from="1569168191624" duration="9542000" />
+      <workItem from="1569168191624" duration="14357000" />
     </task>
     <task id="LOCAL-00001" summary="Landing page in pure css and html">
       <created>1564653588757</created>
@@ -330,11 +334,28 @@
       <option name="project" value="LOCAL" />
       <updated>1569182666935</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="добавлено отображение попыток и интерактивный ввод координат">
+      <created>1569182979776</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1569182979776</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
