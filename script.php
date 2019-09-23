@@ -10,11 +10,6 @@
 </head>
 
 <body style="overflow:hidden;">
-<header>
-    Иван Братчиков<br>
-    Вариант № 201003<br>
-    P3201<br>
-</header>
 <div class="background">
 
     <?php
@@ -237,6 +232,11 @@ if (is_numeric($x) && is_numeric($y) && is_numeric($r) && ($r <= 6 && $r >= 1) &
         </button>
 </main>
 </div>
+<header>
+    Иван Братчиков<br>
+    Вариант № 201003<br>
+    P3201<br>
+</header>
 <footer class="footer">
     <p><span id="datetime"></span></p>
 

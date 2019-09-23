@@ -34,7 +34,11 @@ footer {
 }
 
 .background {
-    margin: -10%;
+    /*margin: -10%;*/
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
     width: 1440px;
     height: 1440px;
     -webkit-animation: Gradient 15s ease infinite;

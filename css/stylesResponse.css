@@ -3,7 +3,9 @@ button, input:focus {
 }
 
 .background {
-    margin: -10%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     width: 1440px;
     height: 1440px;
     -webkit-animation: Gradient 15s ease infinite;
